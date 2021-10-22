@@ -8,7 +8,7 @@ import { useEthers } from "@usedapp/core";
 import SendTransaction from "../components/SendTransaction";
 
 const Home: NextPage = () => {
-  const account = null;
+  const { account } = useEthers();
   //implement logic to find if account is logged in or not
   return account == null ? (
     <ConnectWallet></ConnectWallet>
